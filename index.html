@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Appointment Booking</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0c6f91f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container fade-in">
+    <h1><i class="fas fa-user-md"></i> Book Your Doctor Appointment</h1>
+    <p id="greeting"></p>
+
+    <form id="appointmentForm">
+      <div class="input-group">
+        <label><i class="fas fa-user"></i> Full Name:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-envelope"></i> Email:</label>
+        <input type="email" id="email" required />
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-phone"></i> Phone Number:</label>
+        <input type="tel" id="phone" required />
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-stethoscope"></i> Specialty:</label>
+        <select id="specialty" required>
+          <option value="">--Select--</option>
+          <option value="Cardiologist">Cardiologist</option>
+          <option value="Dermatologist">Dermatologist</option>
+          <option value="Dentist">Dentist</option>
+          <option value="Neurologist">Neurologist</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-calendar-alt"></i> Date:</label>
+        <input type="date" id="date" required />
+      </div>
+
+      <div class="input-group">
+        <label><i class="fas fa-clock"></i> Time Slot:</label>
+        <select id="time" required>
+          <option value="">--Select--</option>
+          <option>09:00 AM - 09:30 AM</option>
+          <option>10:00 AM - 10:30 AM</option>
+          <option>11:00 AM - 11:30 AM</option>
+          <option>01:00 PM - 01:30 PM</option>
+          <option>03:00 PM - 03:30 PM</option>
+        </select>
+      </div>
+
+      <button type="submit" class="glow-button">Book Appointment</button>
+    </form>
+
+    <div id="confirmation" class="hidden confirmation-card">
+      <h2>✅ Appointment Confirmed!</h2>
+      <p id="summaryText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
