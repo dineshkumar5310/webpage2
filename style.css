@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #80deea);
+  padding: 40px;
+  animation: fadeIn 2s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 5px;
+}
+
+#confirmation h2 {
+  color: #2e7d32;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.glow-button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #00796b, #004d40);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #004d40;
+  transition: all 0.3s;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 20px #00796b;
+  transform: scale(1.02);
+}
+
+.hidden {
+  display: none;
+}
+
+.confirmation-card {
+  margin-top: 30px;
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 100, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
